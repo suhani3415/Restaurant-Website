@@ -1,0 +1,211 @@
+/* Remove default margin */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8e7;
+    color: #333;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    height: 450px;
+
+    /* Background picture */
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+
+/* Header text */
+
+.header-content h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 22px;
+}
+
+
+/* Buttons */
+
+button {
+    background-color: #e67e22;
+    color: white;
+
+    border: none;
+    padding: 12px 25px;
+
+    font-size: 16px;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d35400;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about h2 {
+    color: #d35400;
+    font-size: 32px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* ================= MENU ================= */
+
+.menu {
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 35px;
+    color: #d35400;
+    margin-bottom: 30px;
+}
+
+
+/* Food cards container */
+
+.food-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Individual food card */
+
+.food-card {
+    background-color: white;
+
+    width: 300px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    padding-bottom: 20px;
+}
+
+
+/* Food images */
+
+.food-card img {
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover;
+}
+
+
+/* Card heading */
+
+.food-card h3 {
+    font-size: 24px;
+    color: #d35400;
+}
+
+
+/* Card paragraph */
+
+.food-card p {
+    padding: 0 15px;
+
+    line-height: 1.5;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+    text-align: center;
+
+    background-color: #f4d03f;
+
+    padding: 35px 20px;
+
+    margin-top: 30px;
+}
+
+.contact h2 {
+    font-size: 30px;
+}
+
+.contact p {
+    font-size: 18px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+
+    background-color: #222;
+
+    color: white;
+
+    padding: 25px;
+}
+
+footer h3 {
+    color: #f4d03f;
+}
+
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+@media (max-width: 600px) {
+
+    .header-content h1 {
+        font-size: 35px;
+    }
+
+    .header-content p {
+        font-size: 18px;
+    }
+
+    header {
+        height: 350px;
+    }
+
+    .food-card {
+        width: 90%;
+    }
+
+}
